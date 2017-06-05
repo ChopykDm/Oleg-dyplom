@@ -12,6 +12,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/send-mail', function (req, res) {
+  console.log(req.body)
   var transport = pickupTransport({
     directory: path.join(__dirname + '/temp/email')
   });
@@ -23,14 +24,14 @@ app.post('/send-mail', function (req, res) {
     from: '"Fred Foo 👻" <foo@blurdybloop.com>', // sender address
     to: 'bar@blurdybloop.com, baz@blurdybloop.com', // list of receivers
     subject: 'Hello ✔', // Subject line
-    text: 'Hello world ?', // plain text body
+    text: 'Кількість плит складає: ' + req.body.milimetr, // plain text body
     html: '<b>Hello world ?</b>' // html body
   };
 
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      res.send('error')
+      res.send(error)
       return console.log(error);
     }
 
