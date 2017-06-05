@@ -1,0 +1,671 @@
+#sheetCut {
+    width: 100%;
+    font-family: Arial;
+    margin-top: 40px
+}
+
+#sheetCut .pageWidth {
+    width: 1000px;
+    margin: 0 auto
+}
+
+#sheetCut .partsList {
+    margin-top: 20px;
+    margin-left: 350px;
+    border-collapse: collapse
+}
+
+.partsList th:first-child {
+    display: none
+}
+
+.partsList th {
+    padding-left: 20px;
+    width: 105px
+}
+
+.partsList tbody tr.exist {
+    background-color: olivedrab
+}
+
+.partsList tbody td {
+    height: 30px
+}
+
+#sheetCut .partsList input {
+    border: medium none;
+    height: 20px;
+    margin-left: 10px;
+    padding-left: 11px;
+    width: 90px;
+    font-size: 16px;
+    background-color: #f1eae0
+}
+
+#sheetCut .partsList tr input:focus {
+    border: 1px solid #78baee !important;
+    padding-left: 10px
+}
+
+.partsList tr:last-child input {
+    border: 1px solid #ccc !important;
+    background-color: white !important
+}
+
+#sheetCut .mainSizes {
+    background-color: #f3d29f;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px gray;
+    display: none;
+    height: 50px;
+    margin-top: -25px;
+    overflow: hidden;
+    position: absolute;
+    width: 555px
+}
+
+.mainSizes .mainSize {
+    float: left;
+    margin: 5px;
+    width: 80px
+}
+
+.mainSizes .mainSize input {
+    font-size: 16px;
+    margin: 4px;
+    padding: 5px 10px;
+    width: 60px
+}
+
+.sheetSizeTitle.mainSize {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 20px;
+    width: 150px
+}
+
+.mainSizes span {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    padding-top: 5px;
+    text-align: center;
+    width: 7px
+}
+
+.mainSize.save a {
+    background-color: #61b760;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 14px;
+    height: 17px;
+    margin: 5px 11px;
+    padding: 8px 5px;
+    text-align: center;
+    width: 140px
+}
+
+.mainSize.save a:hover {
+    text-decoration: none;
+    opacity: 0.8
+}
+
+#sheetCut .mainFields {
+    float: left
+}
+
+#sheetCut .mainField {
+    background: url("/image/data/cutBg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+    margin: 50px 10px 10px 30px
+}
+
+#sheetCut .mainField:first-child {
+    margin-top: 30px
+}
+
+.mainField .part {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    border: 1px solid #cccccc;
+    text-indent: -9999px
+}
+
+.mainField .part:hover {
+    cursor: pointer
+}
+
+.mainField .part.selected {
+    box-shadow: 0 0 10px #78baee;
+    border-color: #ccc !important
+}
+
+.part.hoverPart {
+    box-shadow: 0 0 4px #78baee
+}
+
+#sheetCut .mainInput {
+    
+}
+
+.mainInput .add.denied {
+    color: red;
+    cursor: default;
+    display: block;
+    margin: 10px;
+    margin-left: 350px;
+    outline: medium none
+}
+
+.mainInput .add {
+    color: #008000;
+    outline: none;
+    display: block;
+    margin: 10px;
+    margin-left: 350px
+}
+
+#sheetCut .copyright {
+    clear: both;
+    margin: 20px 0
+}
+
+#sheetCut .danger {
+    color: red;
+    border: 1px solid red
+}
+
+.darkBackground, .alertBox {
+    position: absolute;
+    display: none
+}
+
+.darkBackground {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0.6;
+    background-color: #333
+}
+
+.alertBox {
+    background-color: white;
+    box-shadow: 0 0 10px;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -70px;
+    min-height: 100px;
+    padding: 20px;
+    top: 50%;
+    width: 300px;
+    z-index: 1001;
+    text-align: center
+}
+
+.alertBox span {
+    display: block;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.alertBox .alertBoxClose {
+    display: block;
+    margin-top: 20px;
+    outline: none
+}
+
+.partsList tr {
+    display: block
+}
+
+.partsList tbody tr {
+    background-color: #f1eae0;
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px
+}
+
+.partsList tbody td:first-child {
+    display: none
+}
+
+.partsList tbody tr.hoverRow {
+    box-shadow: 0 0 5px #78baee
+}
+
+.deleteRow {
+    width: 15px !important
+}
+
+tr .deleteRow a {
+    float: right
+}
+
+.partsList tbody tr:last-child.hoverRow input {
+    background-color: white
+}
+
+.store-logo1 #logo {
+    background-color: inherit !important
+}
+
+.currentSizesBlock,
+.trueSizesBlock {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    width: 350px
+}
+
+.currentSizesBlock .currentSizes,
+.trueSizesBlock .trueSizes {
+    border-bottom: 1px dashed #999;
+    color: orange;
+    cursor: pointer;
+    display: block;
+    float: right;
+    letter-spacing: 1px;
+    margin-right: 100px
+}
+
+.patrtsTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -5px;
+    overflow: hidden;
+}
+
+.cutInfo {
+    float: left;
+    width: 300px
+}
+
+.cutInfo .infoRow {
+    font-size: 15px;
+    line-height: 20px
+}
+
+.cutInfo .infoRow span {
+    color: #000
+}
+
+.infoRow > div {
+    margin-left: 30px
+}
+
+.infoRow .costInfo {
+    background-color: orange;
+    border: 1px solid orchid;
+    border-radius: 50%;
+    color: whitesmoke !important;
+    display: block;
+    float: left;
+    font-size: 10px;
+    height: 15px;
+    line-height: 15px;
+    margin: 0 3px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    width: 15px
+}
+
+.partColor {
+    width: 30px;
+    text-align: center
+}
+
+.partColor div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 3px;
+    /*opacity: 0.3*/
+}
+
+#order {
+    width: 320px
+}
+
+.formRow {
+    min-height: 40px;
+    overflow: hidden
+}
+
+.formRow label {
+    display: block;
+    float: left;
+    width: 100px;
+    line-height: 30px
+}
+
+#orderForm .formRow input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 25px;
+    padding: 3px 8px;
+    width: 190px
+}
+
+.formRow textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    resize: none;
+    width: 190px
+}
+
+#orderForm .sendForm {
+    border: 1px solid;
+    border-radius: 15px;
+    display: block;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    padding: 3px 10px;
+    width: 110px
+}
+
+#orderForm .sendForm:hover {
+    text-decoration: none
+}
+
+#orderForm .formRow input.error {
+    border-color: #ff628a
+}
+
+.orderBlockMessage {
+    display: none
+}
+
+.orderBlockMessage > a {
+    display: block;
+    margin: 10px auto;
+    width: 30px
+}
+
+.orderBlockMessage > div {
+    text-align: justify
+}
+
+.mainField .addititonInfo {
+    color: #ccc;
+    font-size: 16px;
+    position: absolute;
+    text-align: center
+}
+
+.sheetTitle.addititonInfo {
+    color: #000;
+    font-size: 14px;
+    margin: -30px 0 0 30px
+}
+
+.sheetWidth.addititonInfo {
+    border-bottom: 1px solid #ccc;
+    margin-top: -30px;
+    width: inherit;
+    height: 20px
+}
+
+.sheetWidth.addititonInfo::before {
+    content: "|<";
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: calc(-50% + 16px);
+    margin-top: 11px;
+    position: absolute;
+    text-align: left;
+    width: inherit;
+    color: #ccc
+}
+
+.sheetWidth.addititonInfo::after {
+    content: ">|";
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: calc(50% - 28px);
+    margin-top: 11px;
+    position: absolute;
+    text-align: left;
+    width: inherit;
+    color: #ccc
+}
+
+.sheetHeight.addititonInfo span {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: block;
+    position: relative
+}
+
+.sheetHeight.addititonInfo {
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    height: inherit;
+    margin-left: -30px;
+    width: 20px
+}
+
+.sheetHeight.addititonInfo::before {
+    content: ">|";
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 10px;
+    display: block;
+    position: absolute;
+    text-align: left;
+    width: inherit;
+    color: #ccc;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-top: -10px;
+    padding: 0 !important
+}
+
+.sheetHeight.addititonInfo::after {
+    content: "|<";
+    font-size: 14px;
+    line-height: 20px;
+    bottom: 0;
+    position: absolute;
+    text-align: left;
+    width: inherit;
+    color: #ccc;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-left: 1px
+}
+
+#shopLogo {
+    display: none;
+    float: right;
+    width: 120px;
+    height: 61px
+}
+
+td.partBorder {
+    font-size: 8px;
+    padding: 0 10px
+}
+
+td div {
+    overflow: hidden
+}
+
+.partBorder .left {
+    float: left
+}
+
+.partBorder .centerPart {
+    float: left;
+    margin-top: -4px
+}
+
+.partBorder .right {
+    float: right;
+    margin-left: 2px;
+    margin-top: 15px;
+    text-align: center
+}
+
+.centerPart .thin, .centerPart .fat {
+    float: left
+}
+
+.top .thin, .top .fat, .bottom .thin, .bottom .fat {
+    margin: 1px 4px
+}
+
+.centerPart .part {
+    width: 34px;
+    background-color: #ccc;
+    height: 34px;
+    box-sizing: content-box;
+    border: 1px dotted;
+}
+
+.partBorder .left {
+    float: left;
+    margin-right: 2px;
+    margin-top: 15px;
+    text-align: center
+}
+
+.partBorder .border {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.partBorder .border:hover {
+    color: #333
+}
+
+.partBorder .border.active {
+    color: #2ebc60;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.infoRow.customersInfo {
+    font-size: 10px;
+    line-height: 10px;
+    position: relative;
+    width: 350px
+}
+
+.inforow .sheetParams {
+    display: none
+}
+
+.sendFormBlock {
+    background-color: white;
+    height: 35px;
+    margin-top: -40px;
+    opacity: 0.9;
+    position: absolute;
+    width: 131px;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+}
+
+.go2catalog {
+    background: rgba(0, 0, 0, 0) url("/image/data/cutBg.png") no-repeat scroll center top / 55px 28px !important;
+    font-size: 10px;
+    line-height: 12px;
+    width: 90px !important;
+}
+
+.sizeW {
+    text-shadow: 0 0 1px white;
+    margin-top: 5px;
+    color: #666;
+    position: absolute;
+    text-indent: 0;
+}
+
+.sizeH {
+    text-shadow: 0 0 1px white;
+    color: #666;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.orderSheet {
+    width: 57px !important
+}
+
+#headerPhone > span {
+    color: grey;
+    display: block;
+    font-size: 10px;
+}
+
+#trimmingWrap{
+    float: left;
+    width: 498px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #e1e1e1;
+    padding: 10px;
+    margin-left: 51px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#trimmingHelp{
+    position: absolute;
+    opacity: 0.8;
+    top: 15px;
+    right: 68px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+    background-color: #f8883d;
+    border-radius: 50%;
+    width: 23px;
+    height: 22px;
+    line-height: 20px;
+    text-align: center;
+}
+#trimmingHelp:hover{
+    opacity: 1;
+}
+
+#trimmingHelpText{
+    text-align: left;
+    background-color: #fff0de;
+    border: 2px solid #929292;
+    border-radius: 6px;
+    padding: 10px;
+    display: block;
+    margin-top: 5px;
+}
+#trimmingHelpText p{
+    margin-bottom: 10px;
+}
+#trimmingHelpText p:last-of-type{
+    margin-bottom: 0;
+}
+.cutWidget {
+    float: right;
+}
+.cutWidget .sale-button {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
