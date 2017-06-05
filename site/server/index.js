@@ -2,10 +2,12 @@
 const express = require('express')
 const app = express()
 const path = require("path");
+const bodyParser = require('body-parser');
 
 const nodemailer = require('nodemailer');
 const pickupTransport = require('nodemailer-pickup-transport');
 
+app.use(bodyParser.json()); // for parsing application/json
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/public/html/index.html'));
@@ -25,7 +27,7 @@ app.post('/send-mail', function (req, res) {
     to: 'bar@blurdybloop.com, baz@blurdybloop.com', // list of receivers
     subject: 'Hello ✔', // Subject line
     text: 'Кількість плит складає: ' + req.body.milimetr, // plain text body
-    html: '<b>Hello world ?</b>' // html body
+    html: '<b> Кількість плит складає:' + req.body.milimetr + '</b>' // html body
   };
 
   // send mail with defined transport object

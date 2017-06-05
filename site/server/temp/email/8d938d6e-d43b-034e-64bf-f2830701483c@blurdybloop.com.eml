@@ -1,0 +1,20 @@
+Content-Type: multipart/alternative;
+ boundary="--_NmP-4c1f5fc125abbb7f-Part_1"
+From: =?UTF-8?Q?Fred_Foo_=F0=9F=91=BB?= <foo@blurdybloop.com>
+To: bar@blurdybloop.com, baz@blurdybloop.com
+Subject: Hello =?UTF-8?Q?=E2=9C=94?=
+Message-ID: <8d938d6e-d43b-034e-64bf-f2830701483c@blurdybloop.com>
+Date: Mon, 05 Jun 2017 18:38:37 +0000
+MIME-Version: 1.0
+
+----_NmP-4c1f5fc125abbb7f-Part_1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+0JrRltC70YzQutGW0YHRgtGMINC/0LvQuNGCINGB0LrQu9Cw0LTQsNGUOiAxMDA=
+----_NmP-4c1f5fc125abbb7f-Part_1
+Content-Type: text/html
+Content-Transfer-Encoding: 7bit
+
+<b>Hello world ?</b>
+----_NmP-4c1f5fc125abbb7f-Part_1--

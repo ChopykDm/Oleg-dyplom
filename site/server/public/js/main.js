@@ -6,7 +6,7 @@ $(function(){
     $.ajax({
       type: "POST",
       url: "/send-mail",
-      data:  data,
+      data:  JSON.stringify(data),
       contentType:"application/json; charset=utf-8",
       success: function(){alert("все добре")},
        dataType: "json"
